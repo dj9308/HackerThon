@@ -68,3 +68,18 @@
   ```
 
   
+
+# Telegram webhook 설정
+
+사용자가 보내는 메시지를 받아오기 위해서는 Flask 서버와 Telegram의 서버를 웹훅(webhook) 설정을 하여야 한다.
+
+```python
+https://api.telegram.org/bot{token}/setwebhook?url={url}
+```
+
+url을 만들기 위해서는 배포 및 도메인이 필요하지만, ngrok 이라는 서비스를 통해서 로컬 서버에 도메인을 부여할 수 있다.
+
+```bash
+$ ngrok http 5000
+```
+
