@@ -60,4 +60,6 @@ def telegram():
 
 # python app.py로 서버 실행, Debug 모드로 실행.
 if __name__ == '__main__':
-    app.run(debug=True)
+    import os
+    port = int(os.getenv('PORT', 5000))
+    app.run(host='0.0.0.0', port=port, debug=True)
