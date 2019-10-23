@@ -88,3 +88,8 @@ else:
     print['ㄴㄴ']
 
 # 아래에 코드를 작성해 주세요.
+
+elements= ['사랑','노안','집중력','운','돈','성욕']
+words = ['을 적당히~','도 적당.. 엌ㅋ.. 쏟았넿ㅎㅎ', '는 언제 넣었는지 모르지만 충분하군!','을 실수한 척하고 다 털어넣자 ㅎㅎ']
+random = random.sample(elements,3)+random.sample(words,3)
+print(random)
